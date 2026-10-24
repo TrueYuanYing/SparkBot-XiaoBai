@@ -1,0 +1,46 @@
+{
+  "release": "v0.9.1",
+  "firmware_display_version": "XiaoBai 0.9 / XiaoZhi 1.9.4",
+  "packaged_at": "2026-10-24",
+  "chip": "ESP32-S3",
+  "flash_mb": 16,
+  "psram_mb": 8,
+  "application_preserved": true,
+  "files": [
+    {
+      "offset": "0x0",
+      "name": "bootloader.bin",
+      "bytes": 16256,
+      "sha256": "065108dc4cde7e69b78c091fe2868f0346968d05a58d688a0de82dc2b3394316"
+    },
+    {
+      "offset": "0x8000",
+      "name": "partition-table.bin",
+      "bytes": 3072,
+      "sha256": "b3343559e1004306e7f512a3ca641ba9f520df8cbb29f1fe199f21135f4c3c11"
+    },
+    {
+      "offset": "0xd000",
+      "name": "ota_data_initial.bin",
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    },
+    {
+      "offset": "0x100000",
+      "name": "xiaozhi.bin",
+      "bytes": 4913904,
+      "sha256": "ca66b8307e3b84983577e4a8d0936c3ece35f07b9dc7a1c05fbd9cd013fb3c41"
+    },
+    {
+      "offset": "0xd00000",
+      "name": "srmodels.bin",
+      "bytes": 2203819,
+      "sha256": "a6ba71ef40e78bed40498820c07045d65c9f89d6248e4e7a66f16e4fa8fbde68"
+    }
+  ],
+  "android": {
+    "name": "XiaoBai-0.9.apk",
+    "bytes": 25044,
+    "sha256": "cb4877bb3f4da16e05b16067785931b99f773121af5ad72ab33160ae0710a745"
+  }
+}
