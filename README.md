@@ -6,7 +6,7 @@
 
 小智对话 · 坦克遥控 · 木鱼与小游戏 · 双眼陪伴
 
-[使用指南](docs/GETTING_STARTED.md) · [编译说明](docs/BUILD.md) · [版本与验证](docs/RELEASE_NOTES.md) · [参与共创](CONTRIBUTING.md)
+[使用指南](docs/GETTING_STARTED.md) · [编译说明](docs/BUILD.md) · [版本与验证](docs/RELEASE_NOTES.md) · [动态画廊](docs/GALLERY.md) · [小智功能](docs/XIAOZHI.md) · [参与共创](CONTRIBUTING.md)
 
 </div>
 
@@ -32,14 +32,68 @@
 
 “三合一”指常用能力在同一固件中使用。Factory 的独立云后端、天气、USB 投屏、蓝牙音箱、ESP-NOW 群木鱼等完整示例没有全部移植；骰子和应用界面也经过重新实现。这里不宣称完整复刻每个原固件。
 
-## 先看效果
+## 实机录像
 
-<p align="center">
-  <img src="docs/images/v09-web-portrait.png" alt="小白手机遥控竖屏界面" width="255">
-  <img src="docs/images/v09-web-landscape.png" alt="小白手机遥控横屏界面" width="520">
-</p>
+两段视频由项目使用者提供，分别约 28 秒和 12 秒。下面的短 GIF 便于快速预览，点击可打开/下载带声音的完整 MP4。视频展示拍摄时的固件状态，可能与当前发布源码的界面略有差异。
 
-截图来自实际页面的离线布局检查，画面中的连接状态是当时的状态。实物视频后续可在项目中补充。
+<table><tr><th>实机：应用切换与触摸</th><th>实机：双眼表情变化</th></tr><tr><td align="center"><a href="https://github.com/TrueYuanYing/SparkBot-XiaoBai/releases/download/v0.9.1/device-apps-touch-demo.mp4"><img src="docs/media/device-apps-touch-demo.gif" width="240" alt="用户提供的实机应用与触摸演示"></a><br><a href="https://github.com/TrueYuanYing/SparkBot-XiaoBai/releases/download/v0.9.1/device-apps-touch-demo.mp4">观看完整视频 · 约 28 秒 · 有声音</a></td><td align="center"><a href="https://github.com/TrueYuanYing/SparkBot-XiaoBai/releases/download/v0.9.1/device-expressions-demo.mp4"><img src="docs/media/device-expressions-demo.gif" width="240" alt="用户提供的实机双眼表情演示"></a><br><a href="https://github.com/TrueYuanYing/SparkBot-XiaoBai/releases/download/v0.9.1/device-expressions-demo.mp4">观看完整视频 · 约 12 秒 · 有声音</a></td></tr></table>
+
+视频采用兼容浏览器的 H.264/AAC，已移除定位等附加元数据，原文件保留在提供者本地。
+
+## 屏幕页面与切换
+
+下面是当前源码的 LVGL 渲染预览，覆盖双眼/机甲/经典小智、应用列表和全部机身页面。时间、相机与交互为演示输入；25fps 是 GIF 编码值。更多表情、三方向触摸和手机四页动图见 [完整动态画廊](docs/GALLERY.md)。
+
+<table>
+<tr>
+<td align="center"><b>双眼主页</b><br><a href="docs/media/screens/eyes-idle.gif"><img src="docs/media/screens/eyes-idle.gif" width="200" alt="双眼主页源码渲染预览"></a><br><small>常态眨眼和视线移动</small></td>
+<td align="center"><b>机甲主页</b><br><a href="docs/media/screens/mecha-idle.gif"><img src="docs/media/screens/mecha-idle.gif" width="200" alt="机甲主页源码渲染预览"></a><br><small>光刃与呼吸光效</small></td>
+<td align="center"><b>经典小智</b><br><a href="docs/media/screens/classic-xiaozhi.gif"><img src="docs/media/screens/classic-xiaozhi.gif" width="200" alt="经典小智源码渲染预览"></a><br><small>切回原有表情/消息显示</small></td>
+</tr>
+<tr>
+<td align="center"><b>应用列表</b><br><a href="docs/media/screens/page-menu.gif"><img src="docs/media/screens/page-menu.gif" width="200" alt="应用列表源码渲染预览"></a><br><small>单击切换，双击进入</small></td>
+<td align="center"><b>木鱼</b><br><a href="docs/media/screens/page-muyu.gif"><img src="docs/media/screens/page-muyu.gif" width="200" alt="木鱼源码渲染预览"></a><br><small>点击计数与缩放反馈</small></td>
+<td align="center"><b>骰子</b><br><a href="docs/media/screens/page-dice.gif"><img src="docs/media/screens/page-dice.gif" width="200" alt="骰子源码渲染预览"></a><br><small>摇动/点击掷骰</small></td>
+</tr>
+<tr>
+<td align="center"><b>2048</b><br><a href="docs/media/screens/page-2048.gif"><img src="docs/media/screens/page-2048.gif" width="200" alt="2048源码渲染预览"></a><br><small>倾斜或网页方向操作</small></td>
+<td align="center"><b>摄像头</b><br><a href="docs/media/screens/page-camera.gif"><img src="docs/media/screens/page-camera.gif" width="200" alt="摄像头源码渲染预览"></a><br><small>本地预览；此处输入为预录示例</small></td>
+<td align="center"><b>时钟</b><br><a href="docs/media/screens/page-clock.gif"><img src="docs/media/screens/page-clock.gif" width="200" alt="时钟源码渲染预览"></a><br><small>联网校时；此处为示例时钟</small></td>
+</tr>
+<tr>
+<td align="center"><b>海上航行</b><br><a href="docs/media/screens/page-voyage.gif"><img src="docs/media/screens/page-voyage.gif" width="200" alt="海上航行源码渲染预览"></a><br><small>三航道躲礁收集金币</small></td>
+<td align="center"><b>设备设置</b><br><a href="docs/media/screens/page-settings.gif"><img src="docs/media/screens/page-settings.gif" width="200" alt="设备设置源码渲染预览"></a><br><small>网址、音量、样式和字幕</small></td>
+<td align="center"><b>底座连接弹窗</b><br><a href="docs/media/screens/page-dock.gif"><img src="docs/media/screens/page-dock.gif" width="200" alt="底座连接弹窗源码渲染预览"></a><br><small>连接反馈与双眼保持</small></td>
+</tr>
+<tr>
+<td align="center"><b>页面切换</b><br><a href="docs/media/screens/page-transitions.gif"><img src="docs/media/screens/page-transitions.gif" width="200" alt="页面切换源码渲染预览"></a><br><small>主页、列表与应用间滑动</small></td>
+</tr>
+</table>
+
+## 也把小智完整接进了日常使用
+
+小白基于小智 v1.9.4 的语音会话程序，保留本地“嘿，小白”短语唤醒、聆听和语音回答。对话状态、字幕与表情会映射到双眼；需要时可切回经典小智显示。
+
+小智还能通过 MCP 调用底盘的前进、后退、转向、停止、舞蹈和灯效，以及打开应用、敲木鱼、摇骰子和调音量。拍照识图接入同一个摄像头驱动，视觉解释由配置的小智服务提供；手机连续图传是独立的本地预览。
+
+例如可以尝试：“嘿，小白，向前走一下”“打开木鱼”“摇个骰子”“看看你面前是什么”。对话、工具选择和识图需要有效服务配置与互联网；本地遥控、表情和小游戏可以独立使用。
+
+<table><tr><th>聆听 / 说话与字幕</th><th>机甲对话光效</th><th>摸头回应</th></tr><tr><td align="center"><img src="docs/media/screens/eyes-dialogue.gif" width="200" alt="双眼对话与字幕源码预览"></td><td align="center"><img src="docs/media/screens/mecha-dialogue.gif" width="200" alt="机甲对话源码预览"></td><td align="center"><img src="docs/media/screens/eyes-pet-1.gif" width="200" alt="摸头反馈源码预览"></td></tr></table>
+
+逐项能力、语音示例、MCP 工具名、联网要求和源码位置见 **[小智功能详解](docs/XIAOZHI.md)**。
+
+## 手机四个页面
+
+<table>
+<tr>
+<td align="center"><b>遥控</b><br><a href="docs/media/phone/phone-remote.gif"><img src="docs/media/phone/phone-remote.gif" width="170" alt="遥控源码渲染预览"></a></td>
+<td align="center"><b>应用</b><br><a href="docs/media/phone/phone-apps.gif"><img src="docs/media/phone/phone-apps.gif" width="170" alt="应用源码渲染预览"></a></td>
+<td align="center"><b>造型</b><br><a href="docs/media/phone/phone-look.gif"><img src="docs/media/phone/phone-look.gif" width="170" alt="造型源码渲染预览"></a></td>
+<td align="center"><b>设置</b><br><a href="docs/media/phone/phone-settings.gif"><img src="docs/media/phone/phone-settings.gif" width="170" alt="设置源码渲染预览"></a></td>
+</tr>
+</table>
+
+手机动图来自真实网页控件的离线演示，示例状态不代表当时连接了机器人。
 
 ## 下载与刷写
 
@@ -100,6 +154,8 @@
 新增代码和文档以 MIT 发布；上游小智 MIT、Factory Apache-2.0、Bosch 及其他组件保留各自许可。详见 [LICENSE](LICENSE)、[来源说明](THIRD_PARTY_NOTICES.md) 以及对应文件头。硬件设计请遵循原硬件项目的独立声明。
 
 本项目使用 AI 辅助编写、调试代码和制作部分图标，需求选择、实物体验与反馈来自实际使用过程；感谢所有上游作者和社区贡献者。
+
+实机录像、截帧和屏幕预览的来源与使用范围见 [演示媒体说明](docs/media/README.md)；个人录像未包含在代码 MIT 授权中。
 
 ---
 

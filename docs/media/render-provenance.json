@@ -1,0 +1,25 @@
+{
+  "method": "Headless LVGL 9.3 replay of actual firmware UI functions; deterministic state fixtures, no ESP32 execution.",
+  "source_files": {
+    "main/boards/esp-sparkbot/sparkbot_display.cc": "51e84a7912c5035869a8c9c42e20cddc95325498230d03daa3177c9af96ac55a",
+    "main/boards/esp-sparkbot/sparkbot_hub.cc": "546b13861262035919e6ec208bf452de6fb4e9a7c088f9dbeb0598fd2501593c",
+    "main/display/lcd_display.cc": "8645eb33ab2504a6e0fdc86186f0211aa6e0ff58b8b85d06079b5fa127c098f0"
+  },
+  "functions": [
+    "InitFace",
+    "Animate",
+    "DrawMecha",
+    "SetEmotion",
+    "SetTouchFeedback",
+    "CreateScreen",
+    "Render",
+    "non-WeChat SetupUI"
+  ],
+  "adaptations": [
+    "Hardware services are local stubs",
+    "Class fields exposed only to fixture driver",
+    "Clock and camera data are demonstration inputs",
+    "No dialogue server or motor commands",
+    "25 FPS output encoding; not measured hardware FPS"
+  ]
+}

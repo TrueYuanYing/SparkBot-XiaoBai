@@ -1,0 +1,9 @@
+{
+  "method": "Actual local web UI in Edge, mocked device status only; no robot connection.",
+  "scenes": {
+    "remote": 6,
+    "apps": 10,
+    "look": 5,
+    "settings": 7
+  }
+}

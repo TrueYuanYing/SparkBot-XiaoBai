@@ -24,3 +24,5 @@ firmware/main/assets/lang_config.h
 firmware/main/mmap_generate_emoji.h
 .vscode/
 .idea/
+
+visual-preview-output/

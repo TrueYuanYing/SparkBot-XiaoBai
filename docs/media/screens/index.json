@@ -1,0 +1,209 @@
+{
+  "method": "LVGL source replay; 25FPS encoding, not panel measurement",
+  "scenes": [
+    {
+      "name": "classic-xiaozhi",
+      "frames": 120,
+      "duration": 4.8,
+      "bytes": 10409
+    },
+    {
+      "name": "eyes-confident",
+      "frames": 55,
+      "duration": 2.2,
+      "bytes": 8440
+    },
+    {
+      "name": "eyes-curious",
+      "frames": 55,
+      "duration": 2.2,
+      "bytes": 19555
+    },
+    {
+      "name": "eyes-dialogue",
+      "frames": 120,
+      "duration": 4.8,
+      "bytes": 71904
+    },
+    {
+      "name": "eyes-happy",
+      "frames": 55,
+      "duration": 2.2,
+      "bytes": 11308
+    },
+    {
+      "name": "eyes-hit-1",
+      "frames": 50,
+      "duration": 2.0,
+      "bytes": 24594
+    },
+    {
+      "name": "eyes-hit-2",
+      "frames": 50,
+      "duration": 2.0,
+      "bytes": 19126
+    },
+    {
+      "name": "eyes-hit-3",
+      "frames": 50,
+      "duration": 2.0,
+      "bytes": 14366
+    },
+    {
+      "name": "eyes-idle",
+      "frames": 130,
+      "duration": 5.2,
+      "bytes": 30072
+    },
+    {
+      "name": "eyes-pet-1",
+      "frames": 90,
+      "duration": 3.6,
+      "bytes": 34465
+    },
+    {
+      "name": "eyes-pet-2",
+      "frames": 90,
+      "duration": 3.6,
+      "bytes": 31428
+    },
+    {
+      "name": "eyes-pet-3",
+      "frames": 90,
+      "duration": 3.6,
+      "bytes": 30605
+    },
+    {
+      "name": "eyes-shy",
+      "frames": 55,
+      "duration": 2.2,
+      "bytes": 11087
+    },
+    {
+      "name": "eyes-sleepy",
+      "frames": 55,
+      "duration": 2.2,
+      "bytes": 7885
+    },
+    {
+      "name": "eyes-surprised",
+      "frames": 55,
+      "duration": 2.2,
+      "bytes": 15422
+    },
+    {
+      "name": "eyes-winking",
+      "frames": 55,
+      "duration": 2.2,
+      "bytes": 10544
+    },
+    {
+      "name": "mecha-dialogue",
+      "frames": 105,
+      "duration": 4.2,
+      "bytes": 58084
+    },
+    {
+      "name": "mecha-hit-1",
+      "frames": 50,
+      "duration": 2.0,
+      "bytes": 52163
+    },
+    {
+      "name": "mecha-hit-2",
+      "frames": 50,
+      "duration": 2.0,
+      "bytes": 46981
+    },
+    {
+      "name": "mecha-hit-3",
+      "frames": 50,
+      "duration": 2.0,
+      "bytes": 52807
+    },
+    {
+      "name": "mecha-idle",
+      "frames": 105,
+      "duration": 4.2,
+      "bytes": 26478
+    },
+    {
+      "name": "mecha-pet-1",
+      "frames": 90,
+      "duration": 3.6,
+      "bytes": 116448
+    },
+    {
+      "name": "mecha-pet-2",
+      "frames": 90,
+      "duration": 3.6,
+      "bytes": 107259
+    },
+    {
+      "name": "mecha-pet-3",
+      "frames": 90,
+      "duration": 3.6,
+      "bytes": 114936
+    },
+    {
+      "name": "page-2048",
+      "frames": 100,
+      "duration": 4.0,
+      "bytes": 37621
+    },
+    {
+      "name": "page-camera",
+      "frames": 60,
+      "duration": 2.4,
+      "bytes": 81128
+    },
+    {
+      "name": "page-clock",
+      "frames": 85,
+      "duration": 3.4,
+      "bytes": 69513
+    },
+    {
+      "name": "page-dice",
+      "frames": 75,
+      "duration": 3.0,
+      "bytes": 34417
+    },
+    {
+      "name": "page-dock",
+      "frames": 80,
+      "duration": 3.2,
+      "bytes": 87400
+    },
+    {
+      "name": "page-menu",
+      "frames": 175,
+      "duration": 7.0,
+      "bytes": 160505
+    },
+    {
+      "name": "page-muyu",
+      "frames": 80,
+      "duration": 3.2,
+      "bytes": 50163
+    },
+    {
+      "name": "page-settings",
+      "frames": 100,
+      "duration": 4.0,
+      "bytes": 50946
+    },
+    {
+      "name": "page-transitions",
+      "frames": 250,
+      "duration": 10.0,
+      "bytes": 317565
+    },
+    {
+      "name": "page-voyage",
+      "frames": 150,
+      "duration": 6.0,
+      "bytes": 89053
+    }
+  ]
+}
